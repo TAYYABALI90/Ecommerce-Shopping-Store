@@ -1,0 +1,108 @@
+.offcanvas {
+    background-color: var(--header-background-color) !important;
+}
+
+.filter-products button:nth-child(1) {
+    width: 15rem !important;
+    height: 3rem !important;
+    margin: var(--margin-3);
+    background: var(--green-color) !important;
+    border: none !important;
+    outline: none !important;
+    color: var(--white-color) !important;
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    transition: var(--transition);
+}
+
+.filter-products button:nth-child(1):hover {
+    opacity: 0.8 !important;
+}
+
+.filter-products .offcanvas .offcanvas-header h5 {
+    color: var(--white-color) !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+}
+
+.filter-products .offcanvas .offcanvas-header button.btn-close {
+    background-color: var(--white-color) !important;
+}
+
+.filter-products .offcanvas .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin: var(--margin-1) !important;
+}
+
+.filter-products .offcanvas .offcanvas-body p {
+    color: var(--white-color) !important;
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+}
+
+.filter-products .offcanvas .offcanvas-body div.form-check input {
+    width: 1.2rem !important;
+    height: 1.2rem !important;
+    cursor: pointer;
+}
+
+.filter-products .offcanvas .offcanvas-body div.form-check label {
+    margin-left: var(--margin-1) !important;
+    color: var(--white-color) !important;
+    font-size: 1.1rem !important;
+    font-weight: 400 !important;
+}
+
+.filter-products .offcanvas .offcanvas-body button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 14rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    background: var(--green-color) !important;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.filter-products .offcanvas .offcanvas-body button:hover {
+    opacity: 0.8;
+}
+
+div.rating label {
+    color: var(--white-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+div.rating {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+div.rating i {
+    font-size: 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.active {
+    color: gold;
+}
+
+.notActive {
+    color: var(--green-color);
+}

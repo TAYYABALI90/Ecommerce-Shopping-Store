@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.cart-header {
+    margin-top: 8rem;
+    text-align: center;
+    padding: 3em;
+    color: #000;
+}
+
+div.cart-header h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+div.cart-header small {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+div.cart-header small i {
+    font-size: 1.8rem;
+    margin: 0 1rem;
+    vertical-align: sub;
+    cursor: pointer;
+}
+
+div.cart-header i span {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: green;
+    margin-left: 0.3rem !important;
+}
+
+div.cart-table {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 90rem;
+    height: auto;
+    padding: 1.5rem;
+    margin: 0 auto 2rem;
+    border: 1px solid green;
+}
+
+div.cart-table div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    gap: 1rem;
+}
+
+div.cart-table div img {
+    width: 4rem;
+    height: 4rem;
+}
+
+div.cart-table div span:nth-child(1) {
+    color: #08010e;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+div.cart-table div span:nth-child(2) {
+    /* margin-top: 1rem; */
+    color: #08010e96;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+div.cart-table div button.delete-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 3rem;
+    padding: 10px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background-color: #08010e;
+    border-radius: .675rem;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+div.cart-table div button.delete-btn i {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+div.cart-table div button.delete-btn:hover {
+    background-color: blue;
+    color: #fff;
+}
+
+div.cart-table div.dropdown button.quantity-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 16rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    background: var(--green-color) !important;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+div.cart-table div.dropdown button.quantity-btn:hover {
+    opacity: 0.8;
+}
+
+div.cart-table div.dropdown button.quantity-btn i {
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+div.cart-table div.dropdown ul.dropdown-menu {
+    width: 95%;
+    background-color: rgb(38, 38, 38);
+}
+
+div.cart-table div.dropdown ul.dropdown-menu li {
+    margin: 0.5rem;
+}
+
+div.cart-table div.dropdown ul.dropdown-menu li a.dropdown-item {
+    text-align: center;
+    color: #ffffff;
+}
+
+div.cart-table div.dropdown ul.dropdown-menu li a:hover {
+    background-color: blue;
+}

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: rgb(255, 255, 255);
+    --black-color: rgb(0, 0, 0);
+    --header-background-color: rgb(38, 38, 38);
+    --green-color: green;
+    --margin-1: 1rem;
+    --margin-2: 0.5rem;
+    --margin-3: 1.5rem;
+    --padding-1: 1rem;
+    --padding-2: 0.5rem;
+    --transition: 0.5s;
+}
+
+section a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+section header.logo-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header-background-color);
+    width: 100%;
+    padding: var(--padding-2);
+    border-bottom: 3px solid #000;
+}
+
+section header.logo-header h1 {
+    margin: var(--margin-2);
+    color: var(--white-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section header.logo-header .cart {
+    display: flex;
+    align-items: center;
+}
+
+section header.logo-header .cart button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-right: var(--margin-1);
+    width: 14rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    background: var(--green-color) !important;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 1.3rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+section header.logo-header .cart button:hover {
+    opacity: 0.8;
+}
+
+section header.logo-header .cart i {
+    position: relative;
+    font-size: 2rem;
+    color: var(--white-color);
+    margin-right: var(--margin-3);
+}
+
+section header.logo-header .cart i span {
+    position: absolute;
+    top: 0.5%;
+    background: var(--white-color);
+    line-height: 1.7;
+    margin-left: -0.7rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 800;
+    font-family: Futura PT, sans-serif;
+    color: var(--green-color) !important;
+    min-width: 25px;
+    min-height: 25px !important;
+    text-align: center;
+}
+
+section nav {
+    background-color: var(--header-background-color) !important;
+}
+
+section nav li a.nav-link {
+    color: var(--white-color) !important;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+section nav form input.form-control {
+    width: 20rem !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 0.2rem !important;
+}
+
+section nav form button {
+    background: var(--white-color) !important;
+    border: none !important;
+    outline: none !important;
+    margin-right: -0.2rem !important;
+    padding: var(--padding-2) !important;
+    border-radius: 0.2rem !important;
+}
+
+section nav form button i {
+    color: var(--black-color);
+    font-size: 1.1rem;
+}
